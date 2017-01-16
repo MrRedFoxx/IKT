@@ -1,0 +1,129 @@
+body {
+	/* Standard margin*/
+	margin: 0 auto;
+	width: 1920px;
+    height: 1080px;
+    background-color: #4CAF50;
+}
+
+header {
+	width: 1920px;
+	height: 100px;
+	background-color: #6D6D6D;
+}
+
+footer {
+	float: bottom;
+	margin-bottom: 1px;
+	background-color: #6D6D6D;
+	height: 100px;
+    padding-left: 20px;
+    padding-bottom: 10px;
+}
+
+ul.topnav {
+	font-family: arial, sans-serif;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #333;
+}
+
+ul.topnav li {
+	float: left;
+
+}
+
+ul.topnav li a {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	border-right: solid 1px;
+}
+
+ul.topnav li a:hover {
+	background-color: #111;
+}
+
+ul.topnav li.right {
+	float: right;
+}
+
+@media screen and (max-width: 1010px){ /*ipad landscape*/
+	header {
+		width: 1010px;
+		height: 100px;
+	}
+	body {
+		width: 1010px;
+		height: 660px;
+	}
+}
+
+@media screen and (max-width: 750px){ /*ipad portrait*/
+	header {
+		width: 750px;
+		height: 100px;
+	}
+	body {
+		width: 750px;
+		height: 920px;
+	}
+	ul.topnav li.right,
+	ul.topnav li {
+		float: none;
+	}
+	ul.topnav li a {
+		border-bottom: solid 1px;	
+	}
+}
+
+@media screen and (max-width: 468px){ /*iphone landscape*/
+	header {
+		width: 468px;
+		height: 100px;
+	}
+	#headerlogo {
+		width: 468px;
+		height: 98px;
+	}
+	body {
+		width: 468px;
+		height: 202px;
+	}
+	ul.topnav li.right,
+	ul.topnav li {
+		float: none;
+	}
+	ul.topnav li a {
+		border-bottom: solid 1px;	
+	}
+}
+@media screen and (max-width: 310px){ /*iphone portrait*/
+	header {
+		width: 310px;
+		height: 100px;
+	}
+	#headerlogo {
+		width: 310px;
+		height: 98px;
+	}
+	body {
+		width: 310px;
+		height: 352px;
+	}
+	ul.topnav li.right,
+	ul.topnav li {
+		float: none;
+	}
+	ul.topnav li a {
+		border-bottom: solid 1px;	
+	}
+}
+
+h2.LoremIpsum {
+	font-size: 32px;
+}
